@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Hikaru AZAKA">
+
+    <meta name="keywords" content="HTML, CSS, Javascript">
+
+    <link rel="stylesheet" href="./css1/main.css">
+
+    <title>新宿ver.</title>
+</head>
+
+<body>
+    
+    <h1 id="top">新宿のラーメン</h1>
+
+    <div>
+        <h2 class="pink">油そば専門店　GACHI</h2>
+        <dl>
+            
+
+            <img src="aburasoba.jpg"  width="300" height="400"> 
+        
+            <dd class="black">曙橋駅の近くにある油そば。ボリューム満点なうえとてもおいしい。</dd>
+           
+
+       
+        </dl>
+    </div>
+
+    <div>
+        <h2 class="pink">自家製麵　福は内</h2>
+        <dl>
+            
+
+            <img src="eki-iekei.jpg"  width="300" height="400"> 
+        
+            <dd class="black">曙橋駅の近くにあるラーメン。リーズナブルな価格でこの量。濃い味と太麵がしっかりしていておいしい。</dd>
+           
+
+       
+        </dl>
+    </div>
+
+    <div>
+        <h2 class="pink">つけめん　TETSU</h2>
+        <dl>
+            
+
+            <img src="ekitukemen.jpg"  width="500" height="400"> 
+        
+            <dd class="black">新宿駅のなかにあるつけ麺。さわやかな味と、のど越しのいい麺がおいしい。</dd>
+           
+
+       
+        </dl>
+    </div>
+
+    <div>
+        <h2 class="pink">らーめん大戦争
+
+        </h2>
+        <dl>
+            
+
+            <img src="ramenwar.jpg"  width="350" height="400"> 
+        
+            <dd class="black">新宿周辺のラーメン。ビジュアルがよく、味もあっさりでおいしい。</dd>
+           
+
+       
+        </dl>
+    </div>
+
+
+
+    <div>
+
+
+       
+
+       
+
+        <h1>らーめんの味など</h1>
+        <table border="1">
+            
+            <tr>
+                <th></th>
+                <th>GACHI</th>
+                <th>福は内</th>
+                <th>TETSU</th>
+                <th>大戦争</th>
+                
+                
+                
+            </tr>
+            <tr>
+                <th>あっさり</th>
+                <td>×</td>
+                <td>×</td>
+                <td>○</td>
+                <td>○</td>
+                
+                
+            </tr>
+            <tr>
+                <th>こってり</th>
+                <td>△</td>
+                <td>○</td>
+                <td>×</td>
+                <td>×</td>
+               
+                
+
+            </tr> 
+            
+        </table>
+        
+        
+           
+        
+        
+    </div>
+
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+        <py-script>
+    import matplotlib.pyplot as plt
+
+    left = [2021, 2022, 2023]  
+    height = [7, 24, 25] 
+            
+    plt.bar(left, height)
+    plt.show()
+        </py-script>
+    </body>
+
+    <main>
+        <h2>あなたの手を選んでください</h2>
+        
+        <div>
+            <h3>グーorチョキorパー を入力してください</h3>
+    
+            
+            <button type="button" onclick="janken(1)">グー</button>
+            <button type="button" onclick="janken(2)">チョキ</button>
+            <button type="button" onclick="janken(3)">パー</button>
+           
+    
+    
+            
+        </div>
+    
+    
+    </main>
+    <script src="./js/main.js"></script>
+
+    <section>
+        <h1>問い合わせフォーム</h1>
+    
+    <form action="#" method="post">
+       
+        <div>
+          
+            <label for="surname">姓：</label>
+            <input type="text" value="" id="surname" name="lastname" placeholder="姓を入力" required>
+    
+            <label >
+                名：
+                <input type="text"  value="" name="firstname" placeholder="名前を入力" required>
+            </label>
+        </div>
+    
+        <!-- パスワード入力フィールド -->
+        <div>
+            <label for="password">パスワード：</label>
+            <input type="password" id="password" placeholder="パスワードを入力" name="password">
+        </div>
+    
+        
+        <div>
+            <input type="checkbox" id="agreement" name="agreement" value="agree">
+            <label for="agreement">個人情報の取り扱いに同意する</label>
+        </div>
+    
+    
+        <div>
+            <input type="radio"  id="female" name="sex" value="female">
+            <label for="female">女性</label>
+    
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">男性</label>
+    
+            <input type="radio" id="other" name="sex" value="">
+            <label for="other">その他</label>
+    
+           
+        </div>
+    
+     
+        <div>
+            <label  for="requests">問い合わせ内容：</label>
+            <textarea accesskey="" tabindex="" name="requests" id="requests" cols="70" rows="10" placeholder="ここに入力してください"></textarea>
+        </div>
+    
+        <div>
+            <label>
+                登録メールアドレス：
+                <input type="email" name="email">
+            </label>
+        </div>
+    
+        <div>
+            <label>
+                誕生日：
+                <input type="date" name="date">
+            </label>
+        </div>
+    
+        <div>
+            <label>
+                好きな色：
+                <input type="color" name="color">
+            </label>
+        </div>
+    
+      
+        <div>
+            <label>
+                電話番号：
+                <input type="tel" name="tel">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                好きならーめん：
+                <input type="tel" name="tel">
+            </label>
+        </div>
+    
+       
+        <div>
+            <label>
+                アップロードファイル：
+                <input type="file" name="file">
+            </label>
+        </div>
+    
+        
+        <div>
+            <input type="submit" value="送信する">
+            <input type="reset" value="リセット">
+            <input type="button" value="ボタン">
+        </div>
+    
+    </form>
+    
+    </section>
+
+    
+</body>
+</html>

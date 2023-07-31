@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+*{
+    font-family:"Hiraggino Kaku Gothic Pron","ヒラギノ角ゴ Pron",Meiryo,"メイリオ";
+}
+
+body{
+    font-size: 16px;
+}
+
+
+div{
+    background-image: url(../../kadai\ final/haikeiz.png);
+
+    
+    background-repeat: no-repeat;
+
+    
+    background-size: 100%;
+}
+
+
+#top{
+    color: hotpink;
+}
+
+#inn{
+    color: chocolate;
+}
+
+table{
+    border-top: 4px solid red;
+    border-right:2px solid red ;
+    border-bottom: 4px solid red;
+    border-left:2px solid red ;
+}
+
+th{
+    border: 5px double blue;
+}
+
+td{
+    border: 4px dashed rgb(255, 255, 0);
+
+    border-radius: 8px;
+}
+
+#azamaru{
+    font-size: 1.5em;
+    border: 2px dotted rgb(209, 26, 56);
+}
+
+.red{
+    color: rgba(206, 23, 200, 0.933);
+}
+
+
+tr:nth-child(even){
+    background-color: rgb(143, 115, 214);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(100, 176, 24);
+}
+
+tr:nth-child(3n+1){
+    background-color: rgb(222, 222, 86);
+}
+
+tr:first-child{
+    font-size: 1.1rem;
+}
+
+tr:last-child{
+    font-size: 1.1em;
+}
+
+
+
+div li{
+    text-align: left;
+}
+
+div > ul > li > .blue{
+    color: blueviolet;
+}
+
+p+p{
+    text-align: center;
+}
+
+h1~p{
+    font-family: serif;
+}
